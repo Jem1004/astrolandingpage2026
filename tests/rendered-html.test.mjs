@@ -24,8 +24,12 @@ test("renders the complete NusaTech landing page", async () => {
   assert.match(html, /Software inovatif dibangun dengan/);
   assert.match(html, /Solusi software sesuai/);
   assert.match(html, /SatuData Daerah/);
+  assert.match(html, /Proses dipahami lebih dulu/);
+  assert.match(html, /Pahami konteks/);
+  assert.match(html, /Ilustrasi ruang lingkup/);
   assert.match(html, /Pertanyaan yang/);
   assert.match(html, /Konsultasi Sekarang!/);
+  assert.doesNotMatch(html, /browser-mock|1,248|98%|TELKOM<\/span>|PERTAMINA<\/span>/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 

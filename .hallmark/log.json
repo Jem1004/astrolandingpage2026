@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-08-19",
+    "scope": "section redesign",
+    "reference": "https://www.jmc.co.id/",
+    "macrostructure": "preserved split corporate landing page",
+    "changed": ["hero", "services", "advantages", "portfolio"],
+    "preserved": ["navigation", "about", "testimonials", "partners", "faq", "cta", "footer"]
+  }
+]

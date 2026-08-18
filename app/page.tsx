@@ -63,52 +63,58 @@ export default function Home() {
       </header>
 
       <section className="hero" id="beranda">
-        <div className="hero-orb hero-orb-one" /><div className="hero-orb hero-orb-two" />
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">JASA PEMBUATAN SOFTWARE</p>
             <h1>Software inovatif dibangun dengan <span>standar yang tepat.</span></h1>
-            <p className="hero-text">Kami menerjemahkan proses bisnis yang rumit menjadi solusi digital yang praktis, terukur, dan siap bertumbuh bersama perusahaan Anda.</p>
+            <p className="hero-text">Kami bantu memetakan kebutuhan, menguji alur, lalu membangun software yang mudah dipakai dan siap mengikuti perkembangan organisasi Anda.</p>
             <div className="hero-actions">
               <a className="button" href="#kontak"><span aria-hidden="true">✦</span> Saya Mau Tanya</a>
               <a className="text-link" href="#portfolio">Lihat karya kami <span aria-hidden="true">→</span></a>
             </div>
-            <div className="trust-row">
-              <div className="avatar-stack" aria-hidden="true"><span>A</span><span>B</span><span>C</span></div>
-              <p><strong>700+ proyek</strong><br />dipercaya bisnis & instansi</p>
+            <div className="hero-assurances" aria-label="Pendekatan kerja NusaTech">
+              <span><i>01</i>Proses dipahami lebih dulu</span>
+              <span><i>02</i>Rilis dibangun bertahap</span>
+              <span><i>03</i>Tim didampingi setelah rilis</span>
             </div>
           </div>
           <div className="hero-visual">
-            <div className="experience-chip"><strong>17+</strong><span>Tahun<br />Pengalaman</span></div>
+            <div className="experience-chip"><strong>01</strong><span>Discovery<br />sebelum development</span></div>
             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85" alt="Profesional teknologi tersenyum sambil bekerja dengan laptop" />
-            <div className="project-chip"><span className="status-dot" /><strong>Project on time</strong><small>Tim profesional & responsif</small></div>
+            <div className="project-chip"><span className="status-dot" /><strong>Milestone transparan</strong><small>Progres dapat ditinjau bersama</small></div>
           </div>
         </div>
-        <div className="container client-strip">
-          <p>Dipercaya oleh perusahaan dan institusi di Indonesia</p>
-          <div className="client-logos" aria-label="Daftar klien"><span>TELKOM</span><span>PERTAMINA</span><span>MANDIRI</span><span>KAI</span><span>BRI</span><span>KOMINFO</span></div>
+        <div className="container capability-strip">
+          <p>Area solusi yang kami kerjakan</p>
+          <div aria-label="Area solusi"><span>WEB APP</span><span>MOBILE</span><span>ERP</span><span>DATA</span><span>INTEGRASI</span><span>E-GOV</span></div>
         </div>
       </section>
 
       <section className="section services" id="layanan">
         <div className="container">
-          <SectionHeading eyebrow="LAYANAN KAMI" title={<>Solusi software sesuai<br />kebutuhan bisnis</>} center />
-          <div className="service-grid">
-            <article className="service-card teal">
-              <div><span className="card-number">01</span><Icon>⌘</Icon></div>
-              <h3>Aplikasi & Website</h3><p>Produk digital yang cepat, intuitif, dan responsif untuk memperkuat layanan serta operasional bisnis Anda.</p>
-              <a href="#kontak">Selengkapnya <span>→</span></a>
+          <div className="services-heading-row">
+            <SectionHeading eyebrow="LAYANAN KAMI" title={<>Solusi software sesuai<br />kebutuhan bisnis</>} />
+            <p>Kami tidak memulai dari daftar fitur. Setiap layanan dimulai dari tujuan, pengguna, dan proses yang perlu diperbaiki.</p>
+          </div>
+          <div className="service-showcase">
+            <article className="service-card service-featured teal">
+              <div className="service-card-top"><span className="card-number">01 / PRODUK DIGITAL</span><Icon>⌘</Icon></div>
+              <div className="service-card-copy"><h3>Aplikasi & Website</h3><p>Produk digital yang cepat, intuitif, dan responsif untuk memperkuat layanan serta operasional bisnis Anda.</p></div>
+              <ul><li>Web application</li><li>Mobile application</li><li>Website layanan</li><li>GIS & integrasi API</li></ul>
+              <a href="#kontak">Bahas kebutuhan <span>→</span></a>
             </article>
-            <article className="service-card indigo">
-              <div><span className="card-number">02</span><Icon>▦</Icon></div>
-              <h3>Aplikasi E-Government</h3><p>Sistem pemerintahan terintegrasi yang membantu layanan publik menjadi transparan, mudah, dan efisien.</p>
-              <a href="#kontak">Selengkapnya <span>→</span></a>
-            </article>
-            <article className="service-card blue">
-              <div><span className="card-number">03</span><Icon>◎</Icon></div>
-              <h3>Aplikasi ERP</h3><p>Satu sistem untuk menghubungkan keuangan, SDM, inventori, penjualan, dan pengambilan keputusan.</p>
-              <a href="#kontak">Selengkapnya <span>→</span></a>
-            </article>
+            <div className="service-stack">
+              <article className="service-card indigo">
+                <div className="service-card-top"><span className="card-number">02 / LAYANAN PUBLIK</span><Icon>▦</Icon></div>
+                <h3>Aplikasi E-Government</h3><p>Sistem terintegrasi untuk layanan publik yang lebih mudah diakses, dipantau, dan dikelola.</p>
+                <div className="service-tags"><span>Portal</span><span>Satu Data</span><span>Pengaduan</span></div>
+              </article>
+              <article className="service-card blue">
+                <div className="service-card-top"><span className="card-number">03 / OPERASIONAL</span><Icon>◎</Icon></div>
+                <h3>Aplikasi ERP</h3><p>Satu sistem untuk menghubungkan keuangan, SDM, inventori, penjualan, dan pelaporan.</p>
+                <div className="service-tags"><span>HRIS</span><span>Finance</span><span>Inventory</span></div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -118,16 +124,16 @@ export default function Home() {
           <div className="advantages-visual">
             <div className="dot-pattern" aria-hidden="true" />
             <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Tim software berkolaborasi dalam ruang kerja modern" />
-            <div className="quality-badge"><span>✓</span><p><strong>Quality first</strong><small>Software siap digunakan</small></p></div>
+            <div className="quality-badge"><span>✓</span><p><strong>Validasi bersama</strong><small>Sebelum fitur dikembangkan</small></p></div>
           </div>
           <div>
             <SectionHeading eyebrow="KELEBIHAN KAMI" title={<>Kami pahami proses bisnis Anda <span>sebelum membangun software</span></>} />
-            <div className="advantage-list">
-              <article><Icon>✦</Icon><div><h3>Inovatif</h3><p>Solusi relevan yang memberi dampak nyata, bukan sekadar mengikuti tren.</p></div></article>
-              <article><Icon>♢</Icon><div><h3>Bergaransi & Maintenance</h3><p>Pendampingan berkelanjutan agar sistem selalu aman dan optimal.</p></div></article>
-              <article><Icon>◴</Icon><div><h3>Berpengalaman</h3><p>Lebih dari 17 tahun menangani kebutuhan lintas industri dan pemerintahan.</p></div></article>
-              <article><Icon>♙</Icon><div><h3>Tim Profesional</h3><p>Engineer, analis, dan desainer berdedikasi dalam satu tim yang solid.</p></div></article>
-              <article><Icon>✓</Icon><div><h3>Project On Time</h3><p>Milestone transparan dengan progres yang dapat Anda pantau setiap saat.</p></div></article>
+            <p className="advantages-lead">Cara kerja konsultatif membantu kami menemukan perubahan yang benar-benar dibutuhkan—bukan sekadar menambah aplikasi baru.</p>
+            <div className="process-list">
+              <article><span>01</span><div><h3>Pahami konteks</h3><p>Aktor, alur, dokumen, dan titik hambatan dipetakan bersama.</p></div></article>
+              <article><span>02</span><div><h3>Uji arah solusi</h3><p>Prototipe dan model data memastikan keputusan bisa diperiksa sejak awal.</p></div></article>
+              <article><span>03</span><div><h3>Bangun bertahap</h3><p>Rilis kecil menjaga progres tetap terlihat dan koreksi tetap ringan.</p></div></article>
+              <article><span>04</span><div><h3>Dampingi penggunaan</h3><p>Dokumentasi, pelatihan, dan maintenance menjadi bagian dari hasil.</p></div></article>
             </div>
             <a className="button" href="#kontak">Mulai Konsultasi <span>→</span></a>
           </div>
@@ -136,24 +142,27 @@ export default function Home() {
 
       <section className="section portfolio" id="portfolio">
         <div className="container">
-          <SectionHeading eyebrow="DIPERCAYA BERBAGAI BISNIS" title={<>Solusi nyata dari<br />berbagai proyek</>} center />
-          <div className="portfolio-tabs">
-            <input defaultChecked type="radio" name="project" id="project-one" />
-            <input type="radio" name="project" id="project-two" />
-            <input type="radio" name="project" id="project-three" />
-            <input type="radio" name="project" id="project-four" />
-            <div className="tab-labels" role="tablist" aria-label="Pilih proyek">
-              <label htmlFor="project-one">SatuData</label><label htmlFor="project-two">HRIS Pro</label><label htmlFor="project-three">DistribusiKu</label><label htmlFor="project-four">Smart City</label>
+          <div className="portfolio-heading-row">
+            <SectionHeading eyebrow="CONTOH RUANG LINGKUP" title={<>Dari masalah operasional<br />menjadi arah sistem</>} />
+            <p>Contoh berikut menggambarkan pola kebutuhan yang umum kami temui. Rancangan akhirnya selalu disesuaikan dengan proses organisasi Anda.</p>
+          </div>
+          <article className="featured-project">
+            <div className="solution-map" aria-label="Ilustrasi alur sistem SatuData">
+              <div className="map-head"><span>NUSATECH / SYSTEM MAP</span><strong>SatuData Daerah</strong></div>
+              <div className="map-flow">
+                <div><i>01</i><strong>Sumber data</strong><small>Unit & instansi</small></div><b>→</b>
+                <div><i>02</i><strong>Validasi</strong><small>Standar & kualitas</small></div><b>→</b>
+                <div><i>03</i><strong>Katalog</strong><small>Akses & riwayat</small></div><b>→</b>
+                <div><i>04</i><strong>Pelaporan</strong><small>Informasi terpilah</small></div>
+              </div>
+              <p>Ilustrasi ruang lingkup — bukan tampilan produk final.</p>
             </div>
-            <div className="project-panels">
-              <article className="project-panel panel-one">
-                <div className="browser-mock"><div className="browser-bar"><i /><i /><i /></div><div className="dashboard"><aside><b>N</b><span /><span /><span /><span /></aside><div className="dash-main"><small>RINGKASAN DATA</small><h4>Dashboard SatuData</h4><div className="stat-row"><span><b>1,248</b><small>Dataset</small></span><span><b>42</b><small>Instansi</small></span><span><b>98%</b><small>Tervalidasi</small></span></div><div className="chart"><i /><i /><i /><i /><i /><i /><i /></div></div></div></div>
-                <div className="project-copy"><p className="project-kicker">PEMERINTAHAN DIGITAL</p><h3>SatuData Daerah</h3><p>Platform terpadu yang mengubah data lintas instansi menjadi informasi akurat. Proses rekap yang sebelumnya berminggu-minggu kini dapat dilakukan secara real-time.</p><div className="feature-badges"><span><Icon>✦</Icon>Aplikasi inovatif</span><span><Icon>▤</Icon>Desain responsif</span></div><a href="#kontak">Diskusikan proyek serupa →</a></div>
-              </article>
-              <article className="project-panel panel-two"><div className="browser-mock variant-two"><div className="browser-bar"><i /><i /><i /></div><div className="mock-center"><Icon>♙</Icon><h4>HRIS Pro</h4><div><span /><span /><span /></div></div></div><div className="project-copy"><p className="project-kicker">OPERASIONAL SDM</p><h3>HRIS Pro Terintegrasi</h3><p>Absensi, payroll, penilaian, dan administrasi karyawan terkonsolidasi dalam satu aplikasi yang mudah digunakan seluruh tim.</p><div className="feature-badges"><span><Icon>✓</Icon>Payroll otomatis</span><span><Icon>◴</Icon>Data real-time</span></div></div></article>
-              <article className="project-panel panel-three"><div className="browser-mock variant-three"><div className="browser-bar"><i /><i /><i /></div><div className="mock-center"><Icon>↗</Icon><h4>DistribusiKu</h4><div><span /><span /><span /></div></div></div><div className="project-copy"><p className="project-kicker">SUPPLY CHAIN</p><h3>DistribusiKu</h3><p>Sistem pemantauan stok dan pengiriman end-to-end yang membantu perusahaan menekan kesalahan distribusi dan mempercepat pelaporan.</p><div className="feature-badges"><span><Icon>◎</Icon>Tracking langsung</span><span><Icon>▦</Icon>Multi gudang</span></div></div></article>
-              <article className="project-panel panel-four"><div className="browser-mock variant-four"><div className="browser-bar"><i /><i /><i /></div><div className="mock-center"><Icon>⌘</Icon><h4>Smart City</h4><div><span /><span /><span /></div></div></div><div className="project-copy"><p className="project-kicker">LAYANAN PUBLIK</p><h3>Command Center Smart City</h3><p>Dashboard terpadu untuk memantau layanan kota, aduan masyarakat, dan indikator strategis dari satu pusat kendali.</p><div className="feature-badges"><span><Icon>◇</Icon>Visualisasi data</span><span><Icon>↗</Icon>Integrasi API</span></div></div></article>
-            </div>
+            <div className="project-copy"><p className="project-kicker">DATA LINTAS INSTANSI</p><h3>SatuData Daerah</h3><dl><div><dt>Kondisi</dt><dd>Data tersebar, format berbeda, dan proses rekap sulit ditelusuri.</dd></div><div><dt>Arah solusi</dt><dd>Satu katalog data dengan validasi, hak akses, serta riwayat perubahan yang jelas.</dd></div><div><dt>Fokus</dt><dd>Integrasi sumber, kualitas data, dan pelaporan lintas peran.</dd></div></dl><a href="#kontak">Diskusikan kebutuhan serupa →</a></div>
+          </article>
+          <div className="project-index">
+            <article><span>02</span><p>OPERASIONAL SDM</p><h3>HRIS terintegrasi</h3><small>Absensi · payroll · administrasi</small></article>
+            <article><span>03</span><p>SUPPLY CHAIN</p><h3>Sistem distribusi</h3><small>Stok · pengiriman · pelaporan</small></article>
+            <article><span>04</span><p>LAYANAN PUBLIK</p><h3>Command center</h3><small>Aduan · indikator · integrasi API</small></article>
           </div>
         </div>
       </section>
