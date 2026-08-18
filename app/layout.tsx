@@ -10,18 +10,24 @@ export async function generateMetadata(): Promise<Metadata> {
   const socialImage = new URL("/og.png", origin).toString();
 
   return {
-    title: "NusaTech — Partner Transformasi Digital",
-    description: "Solusi software, ERP, dan e-government yang dirancang untuk kebutuhan nyata bisnis Indonesia.",
+    metadataBase: new URL(origin),
+    title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+    description: "Website, kasir POS, dan sistem sekolah untuk UMKM serta pendidikan di Kalimantan Timur.",
+    keywords: ["software house PPU", "web developer Kaltim", "jasa website Balikpapan", "kasir POS Kalimantan", "PPDB online", "Penajam Paser Utara"],
+    robots: { index: true, follow: true },
+    alternates: { canonical: "https://astrodigiso.id" },
     openGraph: {
-      title: "NusaTech — Partner Transformasi Digital",
-      description: "Software yang bertumbuh bersama bisnis Anda.",
+      title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+      description: "Bikin bisnis dan sekolah Anda tampil profesional.",
       type: "website",
-      images: [{ url: socialImage, width: 1733, height: 908, alt: "NusaTech — Software yang Bertumbuh Bersama Bisnis Anda" }],
+      locale: "id_ID",
+      siteName: "Astro Digital Solution",
+      images: [{ url: socialImage, width: 1730, height: 909, alt: "Astro Digital Solution — Software House Lokal PPU & Kaltim" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "NusaTech — Partner Transformasi Digital",
-      description: "Software yang bertumbuh bersama bisnis Anda.",
+      title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+      description: "Bikin bisnis dan sekolah Anda tampil profesional.",
       images: [socialImage],
     },
   };

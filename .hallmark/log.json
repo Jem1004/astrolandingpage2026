@@ -14,5 +14,13 @@
     "changed": ["services"],
     "palette": ["teal", "indigo", "cobalt"],
     "preserved": ["all other sections", "NusaTech typography", "current CTA voice"]
+  },
+  {
+    "date": "2026-08-19",
+    "scope": "verified content migration and rebrand",
+    "reference": "https://astrodigiso.id/",
+    "changed": ["brand", "metadata", "hero", "services", "advantages", "portfolio", "about", "testimonials", "audiences", "faq", "cta", "footer"],
+    "removed": ["unverified partner logos", "unverified awards", "NusaTech identity", "placeholder contact data"],
+    "preserved": ["macrostructure", "cobalt palette", "service-card composition", "typographic hierarchy"]
   }
 ]

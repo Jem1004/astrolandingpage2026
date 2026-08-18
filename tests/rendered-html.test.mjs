@@ -8,32 +8,32 @@ async function render() {
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("https://nusatech.example/", { headers: { accept: "text/html" } }),
+    new Request("https://astrodigiso.id/", { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
 }
 
-test("renders the complete NusaTech landing page", async () => {
+test("renders the complete Astro Digital Solution landing page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>NusaTech — Software untuk Bisnis yang Bertumbuh<\/title>/i);
-  assert.match(html, /Software inovatif dibangun dengan/);
-  assert.match(html, /Solusi software sesuai/);
+  assert.match(html, /<title>Astro Digital Solution — Software House Lokal PPU &amp; Kaltim<\/title>/i);
+  assert.match(html, /Bikin bisnis dan sekolah Anda/);
+  assert.match(html, /Solusi digital untuk kebutuhan/);
   assert.match(html, /class="service-grid"/);
-  assert.match(html, /Aplikasi &amp; Website/);
-  assert.match(html, /Aplikasi E-Government/);
-  assert.match(html, /Aplikasi ERP/);
-  assert.match(html, /SatuData Daerah/);
-  assert.match(html, /Proses dipahami lebih dulu/);
-  assert.match(html, /Pahami konteks/);
-  assert.match(html, /Ilustrasi ruang lingkup/);
-  assert.match(html, /Pertanyaan yang/);
-  assert.match(html, /Konsultasi Sekarang!/);
-  assert.doesNotMatch(html, /browser-mock|1,248|98%|TELKOM<\/span>|PERTAMINA<\/span>/i);
+  assert.match(html, /Aplikasi Kasir &amp; POS/);
+  assert.match(html, /Website Profil Usaha/);
+  assert.match(html, /Sistem Manajemen Sekolah/);
+  assert.match(html, /SPMB Disdikpora PPU/);
+  assert.match(html, /DPMPTSP PPU/);
+  assert.match(html, /Nukarin/);
+  assert.match(html, /0877 8445 1080/);
+  assert.match(html, /6287784451080/);
+  assert.match(html, /Penajam Paser Utara/);
+  assert.doesNotMatch(html, /NusaTech|Mandiri Group|Telkom Indonesia|KOMINFO|700\+|17\+|6281234567890/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
