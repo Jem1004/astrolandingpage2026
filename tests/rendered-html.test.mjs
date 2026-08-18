@@ -31,11 +31,10 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.match(html, /DPMPTSP PPU/);
   assert.match(html, /Nukarin/);
   assert.match(html, /Astro Management School/);
-  assert.match(html, /CMS Sekolah Terintegrasi/);
-  assert.match(html, /Ujian Online ExamBro/);
   assert.match(html, /class="product-grid"/);
   assert.match(html, /\/products\/spmb-disdikpora-ppu\.webp/);
-  assert.match(html, /\/products\/exambro\.webp/);
+  assert.equal((html.match(/class="product-card"/g) ?? []).length, 4);
+  assert.doesNotMatch(html, /CMS Sekolah Terintegrasi|Ujian Online ExamBro/);
   assert.match(html, /0877 8445 1080/);
   assert.match(html, /6287784451080/);
   assert.match(html, /Penajam Paser Utara/);

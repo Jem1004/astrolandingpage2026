@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "compact four-project portfolio",
+    "macrostructure": "Compact Product Grid within existing landing page",
+    "theme": "Cobalt",
+    "enrichment": "four real product screenshots",
+    "brief": "Reduce portfolio height and retain only four flagship projects",
+    "preserved": ["site navigation", "footer", "cobalt palette", "typography", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "portfolio product showcase",
     "macrostructure": "Catalogue Showcase within existing landing page",
     "theme": "Cobalt",
