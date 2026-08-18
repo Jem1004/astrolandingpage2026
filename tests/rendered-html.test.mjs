@@ -24,11 +24,12 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.match(html, /Bikin bisnis dan sekolah Anda/);
   assert.match(html, /Solusi software sesuai kebutuhan bisnis/);
   assert.match(html, /class="service-grid"/);
-  assert.match(html, /Aplikasi &amp; Website/);
-  assert.match(html, /Aplikasi E-Gov/);
-  assert.match(html, /Aplikasi ERP/);
+  assert.match(html, /Pengembangan Aplikasi Web/);
+  assert.match(html, /Pengembangan Aplikasi Mobile/);
+  assert.match(html, /Pengembangan AI &amp; Automasi/);
   assert.equal((html.match(/class="service-card /g) ?? []).length, 3);
   assert.equal((html.match(/>Selengkapnya<\/a>/g) ?? []).length, 3);
+  assert.doesNotMatch(html, /Aplikasi E-Gov|Aplikasi ERP/);
   assert.match(html, /SPMB Disdikpora PPU/);
   assert.match(html, /DPMPTSP PPU/);
   assert.match(html, /Nukarin/);

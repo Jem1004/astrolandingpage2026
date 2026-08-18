@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "service content and density refinement",
+    "macrostructure": "Compact Chromatic Service Panels within existing landing page",
+    "theme": "studied-DNA",
+    "enrichment": "typographic icon medallions",
+    "brief": "Update services to web, mobile, and AI automation while reducing card height",
+    "preserved": ["teal olive orange palette", "reference card composition", "site navigation", "footer", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "reference-led services card redesign",
     "reference": "user-provided screenshot",
     "macrostructure": "Chromatic Service Panels within existing landing page",
