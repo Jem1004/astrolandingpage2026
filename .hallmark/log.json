@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "services section refinement",
+    "macrostructure": "Compact Service Trio within existing landing page",
+    "theme": "Cobalt",
+    "enrichment": "none",
+    "brief": "Highlight consultation, web application, and mobile application services in smaller minimal cards",
+    "preserved": ["site navigation", "footer", "cobalt palette", "Outfit and Questrial typography", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "compact four-project portfolio",
     "macrostructure": "Compact Product Grid within existing landing page",
     "theme": "Cobalt",
