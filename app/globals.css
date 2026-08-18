@@ -1,5 +1,5 @@
-/* Hallmark · macrostructure: preserved split corporate narrative · tone: friendly technical · anchor hue: cobalt */
-/* Hallmark · pre-emit critique: P4 H5 E4 S4 R4 V4 */
+/* Hallmark · macrostructure: preserved split corporate narrative + Catalogue Showcase · tone: friendly technical · anchor hue: cobalt */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Questrial&display=swap");
 
 :root {
@@ -179,33 +179,28 @@ nav .mega-links a:hover { background: var(--color-bg-tint); }
 
 /* Portfolio */
 .portfolio { overflow: hidden; background: #fff; }
-.featured-project { display: grid; grid-template-columns: 1.25fr .75fr; min-height: 560px; overflow: hidden; border: 1px solid var(--color-border-soft); border-radius: 28px; background: var(--color-bg-tint); }
-.solution-map { min-width: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 42px; color: #fff; background: var(--color-primary); }
-.map-head { display: grid; gap: 7px; }
-.map-head span { color: rgba(255,255,255,.65); font: 500 11px var(--font-heading); letter-spacing: .12em; }
-.map-head strong { font: 700 clamp(30px, 4vw, 52px)/1.05 var(--font-heading); }
-.map-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; margin-block: 50px; }
-.map-flow > div { min-width: 0; min-height: 150px; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; border: 1px solid rgba(255,255,255,.34); border-radius: 14px; background: rgba(255,255,255,.08); }
-.map-flow i { margin-bottom: auto; color: rgba(255,255,255,.62); font: 500 10px var(--font-heading); }
-.map-flow strong { font: 600 14px var(--font-heading); }
-.map-flow small { margin-top: 5px; color: rgba(255,255,255,.68); font-size: 11px; }
-.map-flow > b { font: 400 15px var(--font-heading); }
-.solution-map > p { margin: 0; color: rgba(255,255,255,.68); font-size: 11px; }
-.featured-project .project-copy { display: flex; justify-content: center; flex-direction: column; padding: 48px; }
-.project-kicker { margin: 0 0 12px; color: var(--color-primary); font-size: 12px; letter-spacing: .12em; }
-.project-copy h3 { margin: 0 0 26px; color: var(--color-heading); font: 700 34px var(--font-heading); }
-.project-copy dl { display: grid; gap: 18px; margin: 0 0 28px; }
-.project-copy dl > div { display: grid; grid-template-columns: 80px 1fr; gap: 14px; }
-.project-copy dt { color: var(--color-primary); font: 600 11px var(--font-heading); text-transform: uppercase; letter-spacing: .08em; }
-.project-copy dd { margin: 0; font-size: 14px; line-height: 1.55; }
-.project-copy > a { color: var(--color-primary); font: 600 15px var(--font-heading); white-space: nowrap; }
-.project-index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-inline: 1px solid var(--color-border-soft); }
-.project-index article { min-width: 0; padding: 28px; border-right: 1px solid var(--color-border-soft); border-bottom: 1px solid var(--color-border-soft); }
-.project-index article:last-child { border-right: 0; }
-.project-index article > span, .project-index p { color: var(--color-primary); font: 600 10px var(--font-heading); letter-spacing: .1em; }
-.project-index p { margin: 32px 0 8px; }
-.project-index h3 { margin: 0 0 10px; color: var(--color-heading); font: 600 20px var(--font-heading); }
-.project-index small { color: var(--color-body); font-size: 12px; }
+.product-catalog { display: grid; gap: 28px; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.product-card { min-width: 0; display: grid; overflow: hidden; margin: 0; border: 1px solid var(--color-border-soft); border-radius: 22px; background: var(--color-bg-offwhite); transition: transform .2s; }
+.product-card:hover { transform: translateY(-3px); }
+.product-featured { grid-template-columns: minmax(0, 1.35fr) minmax(340px, .65fr); }
+.product-shot { min-width: 0; overflow: hidden; background: var(--color-bg-tint); }
+.product-shot img { width: 100%; height: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; }
+.product-featured .product-shot img { min-height: 500px; }
+.product-card figcaption { min-width: 0; display: flex; align-items: flex-start; flex-direction: column; padding: 30px; }
+.product-featured figcaption { justify-content: space-between; padding: 44px; }
+.product-type { color: var(--color-primary); font: 600 11px var(--font-heading); letter-spacing: .1em; }
+.product-card h3 { margin: 12px 0 12px; color: var(--color-heading); font: 700 26px/1.18 var(--font-heading); }
+.product-featured h3 { font-size: clamp(32px, 3vw, 44px); }
+.product-card p { margin: 0 0 24px; font-size: 15px; line-height: 1.65; }
+.product-card figcaption > a, .product-meta a { margin-top: auto; color: var(--color-primary); font: 600 14px var(--font-heading); white-space: nowrap; }
+.product-card a b { margin-left: 6px; }
+.product-meta { display: flex; flex-wrap: wrap; gap: 9px; }
+.product-meta > span { padding: 8px 11px; border-radius: 999px; color: var(--color-primary-dark); background: var(--color-bg-tint); font: 600 11px var(--font-heading); }
+.product-meta a { width: 100%; margin-top: 15px; }
+.product-wide { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); grid-column: 1 / -1; }
+.product-wide .product-shot img { max-height: 430px; object-fit: contain; }
+.product-wide figcaption { justify-content: center; }
 
 /* About */
 .about { background: var(--color-bg-tint-2); }
@@ -239,7 +234,7 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .nav-wrap { gap: 24px; }
   .hero-grid { gap: 35px; }
   .advantages-grid, .about-grid { gap: 55px; }
-  .featured-project { grid-template-columns: 1fr; }
+  .product-featured { grid-template-columns: minmax(0, 1fr); }
   .footer-main { gap: 45px; }
 }
 
@@ -255,7 +250,7 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .advantages-grid, .about-grid, .faq-grid { grid-template-columns: minmax(0, 1fr); gap: 55px; }
   .advantages-visual { max-width: 650px; margin-inline: auto; }.advantages-visual img { height: 570px; }
   .about-visual { min-height: 570px; }
-  .featured-project .project-copy { padding: 42px; }
+  .product-featured .product-shot img { min-height: 0; }
   .partner-logos { grid-template-columns: repeat(3, 1fr); }
   .faq-grid { gap: 25px; }
   .cta-banner { grid-template-columns: minmax(0, 1fr); }.cta-photo { height: 310px; }.cta-copy { padding: 50px; }
@@ -270,16 +265,12 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .service-card h3 { font-size: 27px; }
   .service-card .icon { width: 78px; height: 78px; margin-block: 28px; }
   .advantages-visual { padding-right: 0; }.advantages-visual img { height: 450px; }.quality-badge { right: 2px; bottom: 50px; }
-  .featured-project { border-radius: 20px; }
-  .solution-map { padding: 28px 22px; }
-  .map-flow { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; margin-block: 34px; }
-  .map-flow > b { display: none; }
-  .map-flow > div { min-height: 128px; }
-  .featured-project .project-copy { padding: 32px 24px; }
-  .project-copy h3 { font-size: 28px; }
-  .project-copy dl > div { grid-template-columns: 1fr; gap: 6px; }
-  .project-index { grid-template-columns: 1fr; }
-  .project-index article { border-right: 0; }
+  .product-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .product-card, .product-wide { grid-template-columns: minmax(0, 1fr); grid-column: auto; border-radius: 18px; }
+  .product-card figcaption, .product-featured figcaption { padding: 25px 22px; }
+  .product-card h3 { font-size: 24px; }
+  .product-featured h3 { font-size: 32px; }
+  .product-wide .product-shot img { max-height: none; }
   .about-copy > p { font-size: 15px; }.award-row { flex-direction: column; }.about-visual { min-height: 470px; }.office-photo { inset: 75px 0 0 0; }.stats-card { right: 12px; gap: 14px; padding: 18px; }.stats-card strong { font-size: 26px; }
   .testimonial-track blockquote { font-size: 20px; }.r2, .r3 { display: none; }
   .partner-logos { grid-template-columns: repeat(2, 1fr); }.partner-logos span { min-height: 80px; }

@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "portfolio product showcase",
+    "macrostructure": "Catalogue Showcase within existing landing page",
+    "theme": "Cobalt",
+    "enrichment": "real product screenshots",
+    "brief": "Replace abstract works section with a visual catalogue of Astro products",
+    "preserved": ["site navigation", "footer", "cobalt palette", "typography", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "section redesign",
     "reference": "https://www.jmc.co.id/",
     "macrostructure": "preserved split corporate landing page",
