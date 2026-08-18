@@ -23,6 +23,10 @@ test("renders the complete NusaTech landing page", async () => {
   assert.match(html, /<title>NusaTech — Software untuk Bisnis yang Bertumbuh<\/title>/i);
   assert.match(html, /Software inovatif dibangun dengan/);
   assert.match(html, /Solusi software sesuai/);
+  assert.match(html, /class="service-grid"/);
+  assert.match(html, /Aplikasi &amp; Website/);
+  assert.match(html, /Aplikasi E-Government/);
+  assert.match(html, /Aplikasi ERP/);
   assert.match(html, /SatuData Daerah/);
   assert.match(html, /Proses dipahami lebih dulu/);
   assert.match(html, /Pahami konteks/);

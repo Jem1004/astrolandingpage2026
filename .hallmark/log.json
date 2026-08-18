@@ -6,5 +6,13 @@
     "macrostructure": "preserved split corporate landing page",
     "changed": ["hero", "services", "advantages", "portfolio"],
     "preserved": ["navigation", "about", "testimonials", "partners", "faq", "cta", "footer"]
+  },
+  {
+    "date": "2026-08-19",
+    "scope": "services section refinement",
+    "reference": "user-provided screenshot",
+    "changed": ["services"],
+    "palette": ["teal", "indigo", "cobalt"],
+    "preserved": ["all other sections", "NusaTech typography", "current CTA voice"]
   }
 ]

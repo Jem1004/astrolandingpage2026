@@ -92,29 +92,26 @@ export default function Home() {
 
       <section className="section services" id="layanan">
         <div className="container">
-          <div className="services-heading-row">
-            <SectionHeading eyebrow="LAYANAN KAMI" title={<>Solusi software sesuai<br />kebutuhan bisnis</>} />
-            <p>Kami tidak memulai dari daftar fitur. Setiap layanan dimulai dari tujuan, pengguna, dan proses yang perlu diperbaiki.</p>
-          </div>
-          <div className="service-showcase">
-            <article className="service-card service-featured teal">
-              <div className="service-card-top"><span className="card-number">01 / PRODUK DIGITAL</span><Icon>⌘</Icon></div>
-              <div className="service-card-copy"><h3>Aplikasi & Website</h3><p>Produk digital yang cepat, intuitif, dan responsif untuk memperkuat layanan serta operasional bisnis Anda.</p></div>
-              <ul><li>Web application</li><li>Mobile application</li><li>Website layanan</li><li>GIS & integrasi API</li></ul>
-              <a href="#kontak">Bahas kebutuhan <span>→</span></a>
+          <SectionHeading eyebrow="LAYANAN KAMI" title={<>Solusi software sesuai<br />kebutuhan bisnis</>} />
+          <div className="service-grid">
+            <article className="service-card teal">
+              <h3>Aplikasi & Website</h3>
+              <Icon>⌘</Icon>
+              <p>Solusi pengembangan aplikasi dan website untuk mendorong transformasi digital dan produktivitas yang optimal.</p>
+              <a href="#kontak">Selengkapnya <span aria-hidden="true">→</span></a>
             </article>
-            <div className="service-stack">
-              <article className="service-card indigo">
-                <div className="service-card-top"><span className="card-number">02 / LAYANAN PUBLIK</span><Icon>▦</Icon></div>
-                <h3>Aplikasi E-Government</h3><p>Sistem terintegrasi untuk layanan publik yang lebih mudah diakses, dipantau, dan dikelola.</p>
-                <div className="service-tags"><span>Portal</span><span>Satu Data</span><span>Pengaduan</span></div>
-              </article>
-              <article className="service-card blue">
-                <div className="service-card-top"><span className="card-number">03 / OPERASIONAL</span><Icon>◎</Icon></div>
-                <h3>Aplikasi ERP</h3><p>Satu sistem untuk menghubungkan keuangan, SDM, inventori, penjualan, dan pelaporan.</p>
-                <div className="service-tags"><span>HRIS</span><span>Finance</span><span>Inventory</span></div>
-              </article>
-            </div>
+            <article className="service-card indigo">
+              <h3>Aplikasi E-Government</h3>
+              <Icon>▦</Icon>
+              <p>Software yang mendukung kinerja pemerintahan agar layanan publik berjalan lebih mudah, cepat, dan terukur.</p>
+              <a href="#kontak">Selengkapnya <span aria-hidden="true">→</span></a>
+            </article>
+            <article className="service-card blue">
+              <h3>Aplikasi ERP</h3>
+              <Icon>◎</Icon>
+              <p>Beragam aplikasi untuk menyederhanakan proses operasional dan membantu perusahaan bekerja lebih terhubung.</p>
+              <a href="#kontak">Selengkapnya <span aria-hidden="true">→</span></a>
+            </article>
           </div>
         </div>
       </section>
