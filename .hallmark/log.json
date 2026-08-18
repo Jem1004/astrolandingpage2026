@@ -1,6 +1,16 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "reference-led services card redesign",
+    "reference": "user-provided screenshot",
+    "macrostructure": "Chromatic Service Panels within existing landing page",
+    "theme": "studied-DNA",
+    "enrichment": "typographic icon medallions",
+    "brief": "Follow the screenshot's teal, olive, and orange service cards and service information",
+    "preserved": ["site navigation", "footer", "Outfit and Questrial typography", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "services section refinement",
     "macrostructure": "Compact Service Trio within existing landing page",
     "theme": "Cobalt",

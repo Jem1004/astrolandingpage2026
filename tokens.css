@@ -9,6 +9,10 @@
   --color-card-teal-ink: #238fa1;
   --color-card-indigo: #5b67d6;
   --color-card-indigo-ink: #4e56bd;
+  --color-service-teal: #137b88;
+  --color-service-olive: #667917;
+  --color-service-orange: #c94e00;
+  --color-service-cta-ink: #a63e00;
   --color-on-solid: #fbfdff;
   --color-heading: #2b2f38;
   --color-body: #5b6472;
@@ -23,9 +27,14 @@
   --space-lg: 1.5rem;
   --space-card: 1.75rem;
   --space-xl: 2rem;
+  --space-card-top: 2.25rem;
+  --space-section-heading: 3.5rem;
+  --space-section-mobile: 4.25rem;
   --space-heading-gap: 4.5rem;
   --space-section-compact: 5.5rem;
+  --space-section-reference: 6rem;
   --radius-service: 1rem;
+  --radius-service-pill: 999px;
   --dur-micro: 150ms;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
