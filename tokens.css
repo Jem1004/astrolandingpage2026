@@ -9,10 +9,16 @@
   --color-card-teal-ink: #238fa1;
   --color-card-indigo: #5b67d6;
   --color-card-indigo-ink: #4e56bd;
-  --color-service-teal: #137b88;
-  --color-service-olive: #667917;
-  --color-service-orange: #c94e00;
-  --color-service-cta-ink: #a63e00;
+  --color-service-web-surface: oklch(96% 0.022 255);
+  --color-service-mobile-surface: oklch(96% 0.022 275);
+  --color-service-ai-surface: oklch(96% 0.022 215);
+  --color-service-web-accent: oklch(55% 0.19 255);
+  --color-service-mobile-accent: oklch(54% 0.135 275);
+  --color-service-ai-accent: oklch(52% 0.105 215);
+  --color-service-ink: oklch(29% 0.045 255);
+  --color-service-body: oklch(46% 0.032 255);
+  --color-service-border: oklch(88% 0.028 255);
+  --color-service-action: oklch(99% 0.006 255);
   --color-on-solid: #fbfdff;
   --color-heading: #2b2f38;
   --color-body: #5b6472;
@@ -21,6 +27,7 @@
   --color-border-soft: #dce6ff;
   --font-heading: "Outfit", sans-serif;
   --font-body: "Questrial", sans-serif;
+  --space-3xs: 0.125rem;
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1rem;
@@ -36,5 +43,11 @@
   --radius-service: 1rem;
   --radius-service-pill: 999px;
   --dur-micro: 150ms;
+  --dur-short: 220ms;
+  --dur-card-enter: 500ms;
+  --dur-card-stagger: 70ms;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --shadow-service: 0 14px 32px oklch(28% 0.04 255 / 0.08);
 }

@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "service cards visual and motion refinement",
+    "macrostructure": "Compact Tonal Service Trio within existing landing page",
+    "theme": "studied-DNA aligned to project cobalt",
+    "enrichment": "purpose-built CSS line icons",
+    "brief": "Add smooth card motion, service-specific icons, supporting descriptions, and calmer brand-aligned colors",
+    "preserved": ["three service categories", "compact card density", "site navigation", "footer", "all other sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "service content and density refinement",
     "macrostructure": "Compact Chromatic Service Panels within existing landing page",
     "theme": "studied-DNA",
