@@ -26,8 +26,12 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.match(html, /class="hero-proof"/);
   assert.match(html, /30\+/);
   assert.match(html, /6\+/);
-  assert.match(html, /\/hero-team-indonesia\.webp/);
+  assert.match(html, /\/hero-team-ppu-v2\.webp/);
+  assert.match(html, /\/konsultasi-lokal-ppu\.webp/);
+  assert.match(html, /\/ruang-kerja-astro-ppu\.webp/);
+  assert.match(html, /\/konsultasi-umkm-ppu\.webp/);
   assert.doesNotMatch(html, /photo-1573496359142/);
+  assert.doesNotMatch(html, /images\.unsplash\.com/);
   assert.match(html, /Solusi software sesuai kebutuhan bisnis/);
   assert.match(html, /class="service-grid"/);
   assert.equal((html.match(/class="service-card (?:web|mobile|ai)-card"/g) ?? []).length, 3);
