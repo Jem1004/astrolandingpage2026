@@ -7,26 +7,31 @@ const services = [
 export default function ServicesSection({ whatsappUrl }: { whatsappUrl: string }) {
   return (
     <section className="section services" id="layanan">
-      <div className="container services-layout">
-        <div className="services-intro">
-          <p className="eyebrow">LAYANAN KAMI</p>
-          <h2>Tiga kemampuan inti untuk membangun sistem yang tepat</h2>
-          <p className="services-lead">Kami mulai dari proses yang perlu dibenahi, lalu memilih teknologi yang paling masuk akal untuk menjalankannya.</p>
-          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Diskusikan kebutuhan <span aria-hidden="true">→</span></a>
+      <div className="container">
+        <div className="services-heading-row">
+          <div className="services-intro">
+            <h2>Tiga kemampuan inti untuk membangun sistem yang tepat</h2>
+          </div>
+          <div className="services-summary">
+            <p className="services-lead">Kami mulai dari proses yang perlu dibenahi, lalu memilih teknologi yang paling masuk akal untuk menjalankannya.</p>
+            <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Diskusikan kebutuhan <span aria-hidden="true">→</span></a>
+          </div>
         </div>
 
-        <div className="service-list">
-          {services.map((service) => (
-            <article className="service-row" key={service.code}>
-              <p className="service-code">{service.code}</p>
-              <div className="service-copy">
+        <div className="service-grid">
+          {services.map((service, index) => (
+            <article className={`service-card${index === 0 ? " service-card-featured" : ""}`} key={service.code}>
+              <div className="service-card-head">
+                <p className="service-code">{service.code}</p>
+                <a className="service-arrow" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label={`Diskusikan ${service.title} melalui WhatsApp`}><span aria-hidden="true">↗</span></a>
+              </div>
+              <div className="service-card-body">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <ul aria-label={`Contoh hasil ${service.title}`}>
-                  {service.outputs.map((output) => <li key={output}>{output}</li>)}
-                </ul>
               </div>
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label={`Diskusikan ${service.title} melalui WhatsApp`}><span aria-hidden="true">↗</span></a>
+              <ul aria-label={`Contoh hasil ${service.title}`}>
+                {service.outputs.map((output) => <li key={output}>{output}</li>)}
+              </ul>
             </article>
           ))}
         </div>

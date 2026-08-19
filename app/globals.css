@@ -119,31 +119,34 @@ nav .mega-links a:hover { background: var(--color-bg-tint); }
 .mega-links strong { margin-bottom: 4px; font: 600 14px var(--font-heading); }
 .mega-links small { color: var(--color-body); font: 12px var(--font-body); }
 
-/* Hallmark · component: service ledger · genre: modern-minimal · theme: studied-DNA (source: existing project cobalt)
+/* Hallmark · component: asymmetric service cards · genre: modern-minimal · theme: studied-DNA (source: existing project cobalt)
  * states: default · hover · focus-visible · active
- * structure: split intro + numbered capability index · cards: none · motion: state-only
+ * structure: wide primary card + compact supporting pair · motion: state-only
  * pre-emit critique: P5 H5 E5 S5 R5 V5
  */
 .services { padding-block: var(--space-section-compact); background: var(--color-bg-offwhite); }
-.services-layout { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.42fr); align-items: start; gap: var(--space-heading-gap); }
-.services-intro { min-width: 0; padding-top: var(--space-xs); }
-.services-intro .eyebrow { margin-bottom: var(--space-lg); }
-.services-intro h2 { max-width: 14ch; margin: 0; color: var(--color-heading); font: 700 clamp(38px, 4.4vw, 56px)/1.08 var(--font-heading); letter-spacing: -.035em; }
-.services-lead { max-width: 52ch; margin: var(--space-lg) 0 var(--space-xl); font-size: 16px; line-height: 1.68; }
+.services-heading-row { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr); align-items: end; gap: var(--space-heading-gap); margin-bottom: var(--space-heading-gap); }
+.services-intro { min-width: 0; }
+.services-intro h2 { max-width: 18ch; margin: 0; color: var(--color-heading); font: 700 clamp(38px, 4.4vw, 56px)/1.08 var(--font-heading); letter-spacing: -.035em; }
+.services-summary { min-width: 0; padding-bottom: var(--space-xs); }
+.services-lead { max-width: 52ch; margin: 0 0 var(--space-lg); font-size: 16px; line-height: 1.68; }
 .portfolio-heading-row { display: grid; grid-template-columns: 1.3fr .7fr; align-items: end; gap: 70px; margin-bottom: 45px; }
 .portfolio-heading-row .section-heading { margin-bottom: 0; }
 .portfolio-heading-row > p { max-width: 460px; margin: 0 0 3px; font-size: 16px; line-height: 1.65; }
-.service-list { border-top: 1px solid var(--color-border-soft); }
-.service-row { min-width: 0; display: grid; grid-template-columns: minmax(0, .28fr) minmax(0, 1fr) auto; align-items: start; gap: var(--space-lg); padding-block: var(--space-card-top); border-bottom: 1px solid var(--color-border-soft); }
-.service-code { margin: var(--space-xs) 0 0; color: var(--color-primary); font: 600 12px/1 var(--font-heading); letter-spacing: .1em; }
-.service-copy { min-width: 0; }
-.service-copy h3 { margin: 0 0 var(--space-sm); color: var(--color-heading); font: 700 clamp(24px, 2.4vw, 34px)/1.16 var(--font-heading); letter-spacing: -.025em; }
-.service-copy > p { max-width: 58ch; margin: 0; font-size: 15px; line-height: 1.62; }
-.service-copy ul { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); margin: var(--space-md) 0 0; padding: 0; color: var(--color-meta); list-style: none; font-size: 12px; }
-.service-copy li::before { width: 4px; height: 4px; display: inline-block; margin: 0 var(--space-xs) 2px 0; border-radius: 50%; content: ""; background: var(--color-primary); }
-.service-row > a { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--color-border-soft); border-radius: 50%; color: var(--color-primary); background: transparent; font: 600 18px/1 var(--font-heading); transition: color var(--dur-micro) var(--ease-out), background-color var(--dur-micro) var(--ease-out); }
-.service-row > a:hover { color: var(--color-on-solid); background: var(--color-primary); }
-.service-row > a:active { transform: translateY(1px); }
+.service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); }
+.service-card { min-width: 0; display: grid; grid-template-areas: "head" "body" "outputs"; grid-template-rows: auto 1fr auto; gap: var(--space-lg); min-height: 280px; padding: var(--space-card); border: 1px solid var(--color-service-border); border-radius: var(--radius-service); background: var(--color-surface); box-shadow: var(--shadow-service); transition: background-color var(--dur-micro) var(--ease-out); }
+.service-card:hover { background: var(--color-service-web-surface); }
+.service-card-featured { grid-column: 1 / -1; grid-template-areas: "head head" "body outputs"; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); min-height: 250px; background: var(--color-service-web-surface); }
+.service-card-head { grid-area: head; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); }
+.service-code { margin: 0; color: var(--color-primary); font: 600 12px/1 var(--font-heading); letter-spacing: .1em; }
+.service-card-body { grid-area: body; min-width: 0; align-self: end; }
+.service-card-body h3 { max-width: 17ch; margin: 0 0 var(--space-sm); color: var(--color-heading); font: 700 clamp(24px, 2.4vw, 34px)/1.16 var(--font-heading); letter-spacing: -.025em; }
+.service-card-body > p { max-width: 54ch; margin: 0; font-size: 15px; line-height: 1.62; }
+.service-card > ul { grid-area: outputs; align-self: end; display: grid; gap: var(--space-sm); margin: 0; padding: 0; color: var(--color-heading); list-style: none; font: 500 13px/1.4 var(--font-heading); }
+.service-card > ul li { padding-top: var(--space-sm); border-top: 1px solid var(--color-border-soft); }
+.service-arrow { width: 42px; height: 42px; display: grid; place-items: center; flex: none; border: 1px solid var(--color-service-border); border-radius: 50%; color: var(--color-primary); background: var(--color-surface); font: 600 17px/1 var(--font-heading); transition: background-color var(--dur-micro) var(--ease-out); }
+.service-arrow:hover { background: var(--color-bg-tint-2); }
+.service-arrow:active { transform: translateY(1px); }
 
 /* Advantages */
 .advantages { background: var(--color-bg-tint-2); }
@@ -221,8 +224,8 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .mobile-menu > div { position: absolute; top: 54px; right: 0; width: 250px; display: grid; padding: 15px; border: 1px solid var(--color-border-soft); border-radius: 16px; background: #fff; box-shadow: 0 20px 50px rgba(21,58,120,.17); }.mobile-menu a { padding: 12px 10px; border-radius: 9px; color: var(--color-heading); font: 500 15px var(--font-heading); }.mobile-menu a:hover { color: var(--color-primary); background: var(--color-bg-tint); }
   .section { padding: 82px 0; }
   .portfolio-heading-row { grid-template-columns: 1fr; align-items: start; gap: 22px; }
-  .services-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
-  .services-intro h2 { max-width: 18ch; }
+  .services-heading-row { grid-template-columns: minmax(0, 1fr); align-items: start; gap: var(--space-lg); }
+  .services-intro h2 { max-width: 20ch; }
   .advantages-grid, .about-grid, .faq-grid { grid-template-columns: minmax(0, 1fr); gap: 55px; }
   .advantages-visual { max-width: 650px; margin-inline: auto; }.advantages-visual img { height: 570px; }
   .about-visual { min-height: 570px; }
@@ -237,12 +240,10 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .section-heading { margin-bottom: 32px; }.section-heading h2 { font-size: 34px; }.section-heading h2 br { display: none; }
   .portfolio-heading-row .section-heading { margin-bottom: 0; }
   .services { padding-block: var(--space-section-mobile); }
-  .services-intro .eyebrow { margin-bottom: var(--space-md); }
   .services-intro h2 { font-size: 36px; }
-  .service-row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-md); padding-block: var(--space-xl); }
-  .service-code { grid-column: 1 / -1; margin: 0; }
-  .service-copy h3 { font-size: 25px; }
-  .service-copy ul { align-items: flex-start; flex-direction: column; gap: var(--space-xs); }
+  .service-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+  .service-card, .service-card-featured { grid-column: auto; grid-template-areas: "head" "body" "outputs"; grid-template-columns: minmax(0, 1fr); min-height: 0; padding: var(--space-lg); }
+  .service-card-body h3 { font-size: 25px; }
   .advantages-visual { padding-right: 0; }.advantages-visual img { height: 450px; }.quality-badge { right: 2px; bottom: 50px; }
   .product-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .product-card { border-radius: 18px; }
@@ -260,6 +261,6 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .service-row > a { transform: none !important; }
+  .service-arrow { transform: none !important; }
   .showcase-shot img { object-position: center top !important; }
 }
