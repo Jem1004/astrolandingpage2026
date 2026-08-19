@@ -1,83 +1,34 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-
-type ServiceIconKind = "web" | "mobile" | "ai";
-
-const ServiceIcon = ({ kind }: { kind: ServiceIconKind }) => (
-  <span className={`service-symbol ${kind}`} aria-hidden="true">
-    <i />
-    <i />
-    <i />
-  </span>
-);
+const services = [
+  { code: "01 / WEB", title: "Pengembangan Aplikasi Web", description: "Sistem berbasis browser yang dirancang mengikuti proses kerja, bukan memaksa tim mengikuti template aplikasi.", outputs: ["Dashboard operasional", "Portal layanan", "Sistem internal"] },
+  { code: "02 / MOBILE", title: "Pengembangan Aplikasi Mobile", description: "Aplikasi Android dan iOS dengan alur yang ringkas, mudah dipelajari, dan siap digunakan dalam aktivitas harian.", outputs: ["Aplikasi pelanggan", "Aplikasi lapangan", "Integrasi sistem"] },
+  { code: "03 / AI", title: "Pengembangan AI & Automasi", description: "Automasi untuk pekerjaan berulang serta pemanfaatan AI yang terukur pada data dan proses bisnis Anda.", outputs: ["Automasi proses", "Asisten berbasis AI", "Pengolahan data"] },
+];
 
 export default function ServicesSection({ whatsappUrl }: { whatsappUrl: string }) {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isAnimated, setIsAnimated] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-        setIsAnimated(true);
-        observer.disconnect();
-      },
-      { threshold: 0.18 },
-    );
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section ref={sectionRef} className={`section services${isAnimated ? " is-animated" : ""}`} id="layanan">
-      <div className="container">
-        <div className="services-heading">
+    <section className="section services" id="layanan">
+      <div className="container services-layout">
+        <div className="services-intro">
           <p className="eyebrow">LAYANAN KAMI</p>
-          <h2>Solusi software sesuai kebutuhan bisnis</h2>
+          <h2>Tiga kemampuan inti untuk membangun sistem yang tepat</h2>
+          <p className="services-lead">Kami mulai dari proses yang perlu dibenahi, lalu memilih teknologi yang paling masuk akal untuk menjalankannya.</p>
+          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Diskusikan kebutuhan <span aria-hidden="true">→</span></a>
         </div>
 
-        <div className="service-grid">
-          <article className="service-card web-card">
-            <div className="service-card-main">
-              <ServiceIcon kind="web" />
-              <div>
-                <h3>Pengembangan Aplikasi Web</h3>
-                <p>Sistem berbasis browser untuk operasional, layanan pelanggan, dan pengelolaan data yang lebih rapi.</p>
+        <div className="service-list">
+          {services.map((service) => (
+            <article className="service-row" key={service.code}>
+              <p className="service-code">{service.code}</p>
+              <div className="service-copy">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul aria-label={`Contoh hasil ${service.title}`}>
+                  {service.outputs.map((output) => <li key={output}>{output}</li>)}
+                </ul>
               </div>
-            </div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Selengkapnya <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article className="service-card mobile-card">
-            <div className="service-card-main">
-              <ServiceIcon kind="mobile" />
-              <div>
-                <h3>Pengembangan Aplikasi Mobile</h3>
-                <p>Aplikasi praktis untuk perangkat mobile dengan alur yang mudah dipahami oleh pengguna sehari-hari.</p>
-              </div>
-            </div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Selengkapnya <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article className="service-card ai-card">
-            <div className="service-card-main">
-              <ServiceIcon kind="ai" />
-              <div>
-                <h3>Pengembangan AI &amp; Automasi</h3>
-                <p>AI dan automasi untuk merapikan pekerjaan berulang, mengolah data, dan mempercepat alur kerja.</p>
-              </div>
-            </div>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Selengkapnya <span aria-hidden="true">→</span></a>
-          </article>
+              <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label={`Diskusikan ${service.title} melalui WhatsApp`}><span aria-hidden="true">↗</span></a>
+            </article>
+          ))}
         </div>
       </div>
     </section>
