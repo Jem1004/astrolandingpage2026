@@ -20,9 +20,14 @@
   --color-service-border: oklch(88% 0.028 255);
   --color-service-action: oklch(99% 0.006 255);
   --color-surface: #ffffff;
+  --color-nav-surface: rgba(240, 245, 255, 0.92);
+  --color-nav-border: rgba(29, 95, 255, 0.12);
+  --color-nav-ink: #24324a;
   --color-mark-surface: #e8f0ff;
   --color-meta: #4a5a76;
   --color-shot-bg: #eef4ff;
+  --color-showcase-live: oklch(48% 0.13 155);
+  --color-showcase-live-surface: oklch(98% 0.012 155 / 0.94);
   --color-hero-frame: oklch(86% 0.055 255);
   --color-hero-caption: oklch(22% 0.035 255 / 0.72);
   --color-hero-chip-surface: oklch(99% 0.006 255 / 0.94);
@@ -52,10 +57,10 @@
   --space-section-compact: 5.5rem;
   --space-section-reference: 6rem;
   --radius-service: 1rem;
+  --size-nav-mark: 2.125rem;
   --radius-showcase: 1.25rem;
   --radius-hero: 1.75rem 1.75rem 0.4rem 1.75rem;
-  --radius-mark: 1.25rem 1.25rem 1.25rem 0.3rem;
-  --size-team-card: 24rem;
+  --size-showcase-card: 22rem;
   --radius-service-pill: 999px;
   --dur-micro: 150ms;
   --dur-short: 220ms;
@@ -65,6 +70,10 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --shadow-nav-scrolled: 6px 8px 25px rgba(29, 95, 255, 0.15);
+  --shadow-card: 0 10px 30px oklch(28% 0.04 255 / 0.07);
+  --shadow-card-lifted: 0 22px 50px oklch(28% 0.04 255 / 0.14);
   --shadow-service: 0 14px 32px oklch(28% 0.04 255 / 0.08);
   --shadow-hero-chip: 0 16px 35px oklch(31% 0.065 255 / 0.14);
+  --shadow-showcase: 0 18px 42px oklch(31% 0.05 255 / 0.1);
 }
