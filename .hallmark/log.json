@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-08-19",
+    "scope": "trust-focused hero refinement",
+    "macrostructure": "Split Studio with H2 Split Diptych hero",
+    "theme": "studied-DNA aligned to project cobalt",
+    "enrichment": "E8 generated editorial photography featuring Indonesian professionals",
+    "brief": "Strengthen first-screen trust with local positioning, existing project proof, direct consultation CTA, and an original representative Indonesian team image",
+    "preserved": ["site navigation", "footer", "existing cobalt palette", "Outfit and Questrial typography", "all non-hero sections"]
+  },
+  {
+    "date": "2026-08-19",
     "scope": "service cards visual and motion refinement",
     "macrostructure": "Compact Tonal Service Trio within existing landing page",
     "theme": "studied-DNA aligned to project cobalt",

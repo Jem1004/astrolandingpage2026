@@ -21,7 +21,30 @@ export default function Home() {
         <a className="button button-small desktop-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi WhatsApp</a><details className="mobile-menu"><summary aria-label="Buka navigasi"><span /><span /><span /></summary><div><a href="#beranda">Beranda</a><a href="#layanan">Layanan</a><a href="#portfolio">Karya</a><a href="#tentang">Tentang</a><a href="#faq">FAQ</a><a href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi WhatsApp</a></div></details>
       </div></header>
 
-      <section className="hero" id="beranda"><div className="container hero-grid"><div className="hero-copy"><p className="eyebrow">SOFTWARE HOUSE LOKAL PPU & KALTIM</p><h1>Bikin bisnis dan sekolah Anda <span>tampil profesional.</span></h1><p className="hero-text">Kami membantu UMKM dan sekolah membangun website, kasir, hingga sistem pendidikan digital dengan harga masuk akal dan pendampingan langsung.</p><div className="hero-actions"><a className="button" href={whatsappUrl} target="_blank" rel="noreferrer"><span aria-hidden="true">✦</span> Konsultasi via WhatsApp</a><a className="text-link" href="#layanan">Lihat layanan kami <span aria-hidden="true">→</span></a></div><div className="hero-assurances" aria-label="Keunggulan Astro Digital Solution"><span><i>01</i>Tim lokal Kalimantan Timur</span><span><i>02</i>Pendampingan langsung</span><span><i>03</i>Solusi sesuai kebutuhan</span></div></div><div className="hero-visual"><div className="experience-chip"><strong>PPU</strong><span>Berbasis lokal<br />melayani Kaltim</span></div><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85" alt="Konsultan teknologi lokal bekerja bersama klien" /><div className="project-chip"><span className="status-dot" /><strong>Bisa diskusi langsung</strong><small>Tim manusia yang mudah dihubungi</small></div></div></div><div className="container capability-strip"><p>Solusi yang kami tangani</p><div aria-label="Area solusi"><span>KASIR POS</span><span>WEBSITE</span><span>PPDB</span><span>ABSENSI</span><span>CMS SEKOLAH</span><span>KONSULTASI</span></div></div></section>
+      <section className="hero" id="beranda">
+        <div className="container hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">SOFTWARE HOUSE LOKAL · PENAJAM PASER UTARA</p>
+            <h1>Teknologi lokal, <span>didampingi sampai digunakan.</span></h1>
+            <p className="hero-text">Kami membantu bisnis, sekolah, dan instansi membangun sistem digital dengan proses yang jelas, komunikasi langsung, dan tim yang berbasis di PPU.</p>
+            <div className="hero-actions">
+              <a className="button" href={whatsappUrl} target="_blank" rel="noreferrer">Diskusikan kebutuhan <span aria-hidden="true">→</span></a>
+              <a className="text-link" href="#portfolio">Lihat proyek kami <span aria-hidden="true">→</span></a>
+            </div>
+            <dl className="hero-proof" aria-label="Bukti pengalaman Astro Digital Solution">
+              <div><dt>30+</dt><dd>Proyek selesai</dd></div>
+              <div><dt>6+</dt><dd>Tahun mendampingi</dd></div>
+              <div><dt>PPU</dt><dd>Tim berbasis lokal</dd></div>
+            </dl>
+          </div>
+          <figure className="hero-visual">
+            <div className="experience-chip"><strong>PPU</strong><span>Diskusi langsung<br />dengan tim lokal</span></div>
+            <img src="/hero-team-indonesia.webp" width="1440" height="1056" fetchPriority="high" decoding="async" alt="Visual representatif profesional teknologi Indonesia berdiskusi mengenai proyek perangkat lunak" />
+            <figcaption>Visual representatif · profesional teknologi Indonesia</figcaption>
+          </figure>
+        </div>
+        <div className="container capability-strip"><p>Solusi yang kami tangani</p><div aria-label="Area solusi"><span>KASIR POS</span><span>WEBSITE</span><span>PPDB</span><span>ABSENSI</span><span>CMS SEKOLAH</span><span>KONSULTASI</span></div></div>
+      </section>
 
       <ServicesSection whatsappUrl={whatsappUrl} />
 

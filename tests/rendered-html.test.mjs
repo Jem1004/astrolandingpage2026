@@ -21,7 +21,13 @@ test("renders the complete Astro Digital Solution landing page", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Astro Digital Solution — Software House Lokal PPU &amp; Kaltim<\/title>/i);
-  assert.match(html, /Bikin bisnis dan sekolah Anda/);
+  assert.match(html, /Teknologi lokal,/);
+  assert.match(html, /didampingi sampai digunakan/);
+  assert.match(html, /class="hero-proof"/);
+  assert.match(html, /30\+/);
+  assert.match(html, /6\+/);
+  assert.match(html, /\/hero-team-indonesia\.webp/);
+  assert.doesNotMatch(html, /photo-1573496359142/);
   assert.match(html, /Solusi software sesuai kebutuhan bisnis/);
   assert.match(html, /class="service-grid"/);
   assert.match(html, /Pengembangan Aplikasi Web/);
