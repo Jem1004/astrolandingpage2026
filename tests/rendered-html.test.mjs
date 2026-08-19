@@ -20,7 +20,7 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Astro Digital Solution — Software House Lokal PPU &amp; Kaltim<\/title>/i);
+  assert.match(html, /<title>Astro Digital Solution — Software House Kalimantan Timur<\/title>/i);
   assert.match(html, /Teknologi lokal,/);
   assert.match(html, /didampingi sampai digunakan/);
   assert.match(html, /class="hero-proof"/);
@@ -52,7 +52,8 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.doesNotMatch(html, /CMS Sekolah Terintegrasi|Ujian Online ExamBro/);
   assert.match(html, /0877 8445 1080/);
   assert.match(html, /6287784451080/);
-  assert.match(html, /Penajam Paser Utara/);
+  assert.match(html, /PARTNER TEKNOLOGI · KALIMANTAN TIMUR/);
+  assert.doesNotMatch(html, /SOFTWARE HOUSE LOKAL · PENAJAM PASER UTARA|Tim berbasis di PPU|Tumbuh di PPU/);
   assert.doesNotMatch(html, /NusaTech|Mandiri Group|Telkom Indonesia|KOMINFO|700\+|17\+|6281234567890/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });

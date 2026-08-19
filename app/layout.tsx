@@ -11,22 +11,22 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+    title: "Astro Digital Solution — Software House Kalimantan Timur",
     description: "Website, kasir POS, dan sistem sekolah untuk UMKM serta pendidikan di Kalimantan Timur.",
-    keywords: ["software house PPU", "web developer Kaltim", "jasa website Balikpapan", "kasir POS Kalimantan", "PPDB online", "Penajam Paser Utara"],
+    keywords: ["software house Kalimantan Timur", "web developer Kaltim", "jasa website Balikpapan", "pengembangan aplikasi Samarinda", "kasir POS Kalimantan", "PPDB online"],
     robots: { index: true, follow: true },
     alternates: { canonical: "https://astrodigiso.id" },
     openGraph: {
-      title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+      title: "Astro Digital Solution — Software House Kalimantan Timur",
       description: "Bikin bisnis dan sekolah Anda tampil profesional.",
       type: "website",
       locale: "id_ID",
       siteName: "Astro Digital Solution",
-      images: [{ url: socialImage, width: 1730, height: 909, alt: "Astro Digital Solution — Software House Lokal PPU & Kaltim" }],
+      images: [{ url: socialImage, width: 1730, height: 909, alt: "Astro Digital Solution — Software House Kalimantan Timur" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Astro Digital Solution — Software House Lokal PPU & Kaltim",
+      title: "Astro Digital Solution — Software House Kalimantan Timur",
       description: "Bikin bisnis dan sekolah Anda tampil profesional.",
       images: [socialImage],
     },
