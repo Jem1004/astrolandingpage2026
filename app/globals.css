@@ -275,7 +275,19 @@ h1 span { color: var(--color-primary); }
 @keyframes testi-settle-featured { from { opacity: 0; transform: translateY(26px) rotate(-7deg); } to { opacity: 1; transform: rotate(-2.5deg); } }
 
 /* Partners and FAQ */
-.partners { padding-top: 80px; background: var(--color-bg-tint-2); }.partner-logos { display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; gap: 18px; }.partner-logos span { min-height: 90px; display: grid; place-items: center; align-content: center; padding: 16px; border: 1px solid var(--color-border-soft); border-radius: 14px; background: #fff; text-align: center; }.partner-logos b { color: #24324a; font: 700 20px var(--font-heading); }.partner-logos small { margin-top: 4px; color: #8390a3; font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
+.clients { background: var(--color-surface); }
+.clients-layout { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2.2fr); align-items: center; gap: var(--space-xl); }
+.clients-head h2 { max-width: 15ch; margin: 0 0 var(--space-sm); color: var(--color-heading); font: 700 clamp(26px, 2.6vw, 34px)/1.28 var(--font-heading); letter-spacing: -.02em; }
+.clients-lead { max-width: 34ch; margin: 0; font-size: 15px; line-height: 1.68; }
+
+.clients-wall { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; border-left: 1px solid var(--color-border-soft); list-style: none; }
+.clients-wall li:nth-child(n+4) { border-top: 1px solid var(--color-border-soft); }
+.clients-wall a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3xs); min-height: 12rem; padding: var(--space-lg) var(--space-md); text-align: center; transition: opacity var(--dur-short) var(--ease-out); }
+.clients-wall a:hover { opacity: .65; }
+.clients-logo { width: auto; height: auto; max-width: 9.5rem; max-height: 4.5rem; margin-bottom: var(--space-sm); object-fit: contain; }
+.clients-wall strong { color: var(--color-heading); font: 700 15px/1.35 var(--font-heading); letter-spacing: -.01em; }
+.clients-wall small { color: var(--color-meta); font: 500 10px/1.4 var(--font-body); letter-spacing: .1em; text-transform: uppercase; }
+
 .faq { background: #fff; }.faq-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 100px; }.faq-lead { max-width: 390px; margin: -18px 0 25px; font-size: 16px; line-height: 1.65; }.accordion { display: grid; gap: 12px; }.accordion details { overflow: hidden; border: 1px solid var(--color-border-soft); border-radius: 14px; background: #fff; }.accordion details[open] { border-color: var(--color-primary-light); box-shadow: 0 10px 30px rgba(29,95,255,.07); }.accordion summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 22px; color: var(--color-heading); cursor: pointer; list-style: none; background: #f8faff; font: 600 16px var(--font-heading); }.accordion summary::-webkit-details-marker { display: none; }.accordion summary span { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--color-primary); transition: transform .2s; }.accordion details[open] summary span { transform: rotate(180deg); }.accordion details p { margin: 0; padding: 0 68px 22px 22px; font-size: 15px; line-height: 1.65; }
 
 /* Contact & footer */
@@ -311,7 +323,8 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .testimonials.is-animated .testi-card.is-featured { animation-name: testi-settle; }
   .advantages-visual { max-width: 650px; margin-inline: auto; }.advantages-visual img { height: 570px; }
   .about-visual { min-height: 570px; }
-  .partner-logos { grid-template-columns: repeat(3, 1fr); }
+  .clients-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-lg); }
+  .clients-wall { grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 0; border-top: 1px solid var(--color-border-soft); }
   .faq-grid { gap: 25px; }
   .cta-banner { grid-template-columns: minmax(0, 1fr); }.cta-photo { height: 310px; }.cta-copy { padding: 50px; }
   .footer-main { grid-template-columns: 1fr; }.footer-links { grid-template-columns: repeat(2, 1fr); }
@@ -340,7 +353,10 @@ footer { color: rgba(255,255,255,.75); background: var(--color-footer-bg); }.foo
   .team-photo { min-height: 20rem; }
   .about-copy > p { font-size: 15px; }.award-row { flex-direction: column; }.about-visual { min-height: 470px; }.office-photo { inset: 75px 0 0 0; }.stats-card { right: 12px; gap: 14px; padding: 18px; }.stats-card strong { font-size: 26px; }
   .testi-card { min-height: 0; padding: var(--space-lg); }
-  .partner-logos { grid-template-columns: repeat(2, 1fr); }.partner-logos span { min-height: 80px; }
+  .clients-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .clients-wall li:nth-child(n+3) { border-top: 1px solid var(--color-border-soft); }
+  .clients-wall a { min-height: 9.5rem; padding: var(--space-md) var(--space-xs); }
+  .clients-logo { max-height: 3.5rem; max-width: 7rem; }
   .accordion summary { padding: 17px; font-size: 14px; }.accordion details p { padding: 0 50px 18px 17px; font-size: 14px; }
   .contact-section { padding-top: 30px; }.cta-banner { width: 100%; border-radius: 0; }.cta-photo { height: 260px; }.cta-copy { padding: 40px 24px 50px; }.cta-copy h2 { font-size: 34px; }
   .footer-main { padding-top: 65px; }.footer-links { grid-template-columns: 1fr 1fr; gap: 35px 22px; }.footer-bottom { align-items: flex-start; flex-direction: column; gap: 20px; }.footer-bottom > a { margin-left: 0; }

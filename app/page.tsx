@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PortfolioSection from "./portfolio-section";
 import ServicesSection from "./services-section";
+import ClientsSection from "./clients-section";
 import TeamSection from "./team-section";
 import TestimonialsSection from "./testimonials-section";
 
@@ -61,7 +62,7 @@ export default function Home() {
 
       <TestimonialsSection />
 
-      <section className="section partners"><div className="container"><SectionHeading eyebrow="FOKUS KAMI" title={<>Dekat dengan kebutuhan<br />masyarakat dan organisasi lokal</>} center /><div className="partner-logos"><span><b>UMKM</b><small>Kuliner & jasa</small></span><span><b>Retail</b><small>Toko & persediaan</small></span><span><b>Sekolah</b><small>Administrasi digital</small></span><span><b>PPDB</b><small>Penerimaan murid</small></span><span><b>Instansi</b><small>Layanan publik</small></span><span><b>Kaltim</b><small>Wilayah layanan</small></span></div></div></section>
+      <ClientsSection />
 
       <section className="section faq" id="faq"><div className="container faq-grid"><div><SectionHeading eyebrow="PERTANYAAN UMUM" title={<>Hal yang sering<br />ditanyakan</>} /><p className="faq-lead">Ceritakan kondisi usaha atau sekolah Anda. Tim kami akan membantu memetakan langkah yang paling masuk akal.</p><a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Tanyakan langsung <span>→</span></a></div><div className="accordion"><details open><summary>Layanan apa saja yang tersedia?<span>⌄</span></summary><p>Kami mengembangkan aplikasi kasir dan POS, website profil usaha, sistem sekolah, PPDB online, absensi, rapor, CMS sekolah, serta konsultasi IT.</p></details><details><summary>Wilayah mana yang dilayani?<span>⌄</span></summary><p>Fokus utama kami Penajam Paser Utara dan Paser, sehingga pertemuan dan pendampingan langsung paling mudah dijadwalkan di dua wilayah ini. Kami juga melayani Balikpapan, Samarinda, dan wilayah lain di Kalimantan Timur, serta proyek luar daerah secara daring.</p></details><details><summary>Apakah tim bisa datang langsung?<span>⌄</span></summary><p>Bisa. Untuk kebutuhan di area layanan, pertemuan, survei, dan pelatihan langsung dapat dijadwalkan bersama tim.</p></details><details><summary>Bagaimana cara memulai proyek?<span>⌄</span></summary><p>Hubungi kami melalui WhatsApp dan ceritakan masalah yang ingin diselesaikan. Kami akan membantu menyusun kebutuhan dan prioritas awalnya.</p></details><details><summary>Apakah ada pendampingan setelah sistem jadi?<span>⌄</span></summary><p>Ya. Pendampingan, pelatihan pengguna, dan dukungan teknis disesuaikan dengan kebutuhan operasional setiap proyek.</p></details></div></div></section>
 

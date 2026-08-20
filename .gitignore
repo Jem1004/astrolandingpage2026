@@ -44,6 +44,7 @@ yarn-error.log*
 # are what actually ships under public/)
 /foto-tim/
 /dokumentasi-porto/
+/logo-client/
 
 # Unrelated scripts never belong in this repo — verify before committing
 # anything with a .gs extension again.

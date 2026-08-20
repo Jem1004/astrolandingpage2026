@@ -47,7 +47,6 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.match(html, /href="https:\/\/dpmptsp\.penajamkab\.go\.id\/"/);
   assert.match(html, /href="https:\/\/www\.nukarin\.id\/"/);
   assert.match(html, /href="https:\/\/ams\.astrodigiso\.id\/"/);
-  assert.match(html, /DPMPTSP PPU/);
   assert.match(html, /Nukarin/);
   assert.match(html, /Astro Management School/);
   assert.match(html, /class="showcase-grid"/);
@@ -68,6 +67,19 @@ test("renders the complete Astro Digital Solution landing page", async () => {
   assert.equal((html.match(/class="showcase-shot"/g) ?? []).length, 8);
   assert.equal((html.match(/class="showcase-live"/g) ?? []).length, 7);
   assert.doesNotMatch(html, /CMS Sekolah Terintegrasi|Ujian Online ExamBro/);
+  assert.match(html, /class="clients-wall"/);
+  assert.equal((html.match(/class="clients-logo"/g) ?? []).length, 9);
+  assert.match(html, /Disdikpora PPU/);
+  assert.match(html, /DPMPTSP PPU/);
+  assert.match(html, /Pemkab Paser/);
+  assert.match(html, /SMK Muhammadiyah 1 PPU/);
+  assert.match(html, /SMP Negeri 3 PPU/);
+  assert.match(html, /SMP Negeri 5 PPU/);
+  assert.match(html, /FKPP PPU/);
+  assert.match(html, /SMP Negeri 1 PPU/);
+  assert.match(html, /SDN 017 Penajam/);
+  assert.match(html, /\/clients\/smpn5-ppu\.webp/);
+  assert.doesNotMatch(html, /class="partner-logos"|\/clients\/[a-z0-9-]+\.svg/);
   assert.match(html, /class="team-grid"/);
   assert.match(html, /Irawan/);
   assert.match(html, /Sadriansyah/);
